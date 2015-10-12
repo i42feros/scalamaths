@@ -1,11 +1,13 @@
-def calculate(n: Int, list: List[Int], limit: Int) : List[Int] = {
-  if (n >= limit)
-    list
-  else
-    calculate(list.head + n, n :: list, limit)
-}
+def isPalindrome(text: String): Boolean = text == text.reverse
 
+val palindromes :Seq[Int] = for {
+    x <- 100 until 999
+    y <- x until 999
+  } yield  x * y
 
-def getNumbersRecursively(number: Int): List[Int] = calculate(1, List(0), number)
-
-getNumbersRecursively(89)
+val maxPalindrome = palindromes
+  .filter(n => isPalindrome(n.toString()))
+  .sortWith((x, y) => x > y)
+  .head
+//580085
+//906609

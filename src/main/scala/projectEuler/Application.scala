@@ -12,6 +12,11 @@ object Application {
     println("Problem 2. By considering the terms in the Fibonacci sequence whose values do not exceed four million, find the sum of the even-valued terms.")
     println("Result: " + fibonacciCalculator.sumOfEvenValues)
 
+    println("*-*-*--*-*-*-*-*-* *-*-*--*-*-*-*-*-*")
+    val largestPalindromeProduct = new LargestPalindromeProduct(100,999)
+    println("Problem 4. Find the largest palindrome made from the product of two 3-digit numbers.")
+    println("Result: " + largestPalindromeProduct.maxPalindrome)
+
   }
 
 }
