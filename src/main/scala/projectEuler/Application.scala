@@ -12,6 +12,11 @@ object Application {
     println("Problem 2. By considering the terms in the Fibonacci sequence whose values do not exceed four million, find the sum of the even-valued terms.")
     println("Result: " + fibonacciCalculator.sumOfEvenValues)
 
+    println("*-*-*--*-*-*-*-*-* *-*-*--*-*-*-*-*-*")
+    val largestPrimeFactor = new LargestPrimeFactor(600851475143L)
+    println("Problem 3. What is the largest prime factor of the number 600851475143?")
+    println("Result: " + largestPrimeFactor.result)
+
   }
 
 }
