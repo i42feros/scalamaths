@@ -2,9 +2,6 @@ package projectEuler
 
 import org.specs2.mutable.Specification
 
-/**
- * Created by sonia on 12/10/2015.
- */
 class LargestPalindromeProductTest extends Specification {
 
   "LargestPalindromeProductTest from 10 to 99" should {
