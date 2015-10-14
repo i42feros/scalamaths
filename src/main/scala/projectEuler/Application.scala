@@ -13,9 +13,15 @@ object Application {
     println("Result: " + fibonacciCalculator.sumOfEvenValues)
 
     println("*-*-*--*-*-*-*-*-* *-*-*--*-*-*-*-*-*")
+
     val largestPrimeFactor = new LargestPrimeFactor(600851475143L)
     println("Problem 3. What is the largest prime factor of the number 600851475143?")
     println("Result: " + largestPrimeFactor.result)
+
+    val largestPalindromeProduct = new LargestPalindromeProduct(100,999)
+    println("Problem 4. Find the largest palindrome made from the product of two 3-digit numbers.")
+    println("Result: " + largestPalindromeProduct.maxPalindrome)
+
 
   }
 
