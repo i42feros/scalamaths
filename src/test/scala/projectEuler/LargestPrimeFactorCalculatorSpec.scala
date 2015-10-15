@@ -17,6 +17,6 @@ class LargestPrimeFactorCalculatorSpec extends WordSpec with Matchers {
 
   testResult("calculate the largest prime factor of a number", 13195L, Some(29))
   testResult("calculate the largest prime factor of a prime number", 29L, None)
-  testResult("calculate the largest prime factor of an outbound number", 1L, None)
+  testResult("calculate the largest prime factor of 1", 1L, None)
 
 }
