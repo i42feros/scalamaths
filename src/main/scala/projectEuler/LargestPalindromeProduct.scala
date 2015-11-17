@@ -16,7 +16,6 @@ class LargestPalindromeProduct(lowerLimit: Int, upperLimit: Int) {
 
   val maxPalindrome = valuesToExplore
     .filter(n => isPalindrome(n.toString()))
-    .sortWith((x, y) => x > y)
-    .head
+    .max
 
 }
