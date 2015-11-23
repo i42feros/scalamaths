@@ -22,7 +22,9 @@ object Application {
     println("Problem 4. Find the largest palindrome made from the product of two 3-digit numbers.")
     println("Result: " + largestPalindromeProduct.maxPalindrome)
 
-
+    val sumSquareDifference = new SumSquareDifference(100)
+    println("Problem 6. Find the difference between the sum of the squares of the first one hundred natural numbers and the square of the sum.")
+    println("Result: " + sumSquareDifference.result)
   }
 
 }

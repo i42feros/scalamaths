@@ -2,9 +2,7 @@ package projectEuler
 
 import org.scalatest.{Matchers, WordSpec}
 
-/**
- * Created by sonia on 12/10/2015.
- */
+
 class LargestPrimeFactorCalculatorSpec extends WordSpec with Matchers {
 
   "Result" when {
