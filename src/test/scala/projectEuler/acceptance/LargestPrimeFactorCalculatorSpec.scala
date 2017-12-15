@@ -3,9 +3,6 @@ package projectEuler.acceptance
 import org.scalatest.{Matchers, WordSpec}
 import projectEuler.LargestPrimeFactorCalculator
 
-/**
- * Created by sonia on 12/10/2015.
- */
 class LargestPrimeFactorCalculatorSpec extends WordSpec with Matchers {
 
   "Result" when {

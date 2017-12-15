@@ -10,16 +10,16 @@ import scala.math._
  */
 class LargestPrimeFactorCalculator(num: Long) {
 
-  private def isFactor(numerator: Long)(denominator: Long): Boolean = {
+  private def isFactor(numerator: Long, denominator: Long): Boolean = {
     numerator % denominator == 0
   }
 
   private def isPrime(number: Long): Boolean = {
-    !(2L until number exists isFactor(number))
+    !(2L until number exists (isFactor(number, _)))
   }
 
   private lazy val primeFactors: Seq[Long] = (2L to sqrt(num).toLong)
-    .filter(isFactor(num))
+    .filter(isFactor(num, _))
     .filter(isPrime)
 
   lazy val result: Option[Long] = if(primeFactors.isEmpty) None else Some(primeFactors.max)
