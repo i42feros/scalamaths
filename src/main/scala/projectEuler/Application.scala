@@ -22,6 +22,12 @@ object Application {
     println("Problem 4. Find the largest palindrome made from the product of two 3-digit numbers.")
     println("Result: " + largestPalindromeProduct.maxPalindrome)
 
+    println("*-*-*--*-*-*-*-*-* *-*-*--*-*-*-*-*-*")
+    val start: Int = 1
+    val end: Int = 20
+    val smallestMultipleCalculator = new SmallestMultipleCalculator(start, end)
+    println(s"Problem 5. What is the smallest positive number that is evenly divisible by all of the numbers from $start to $end?")
+    println(s"Result: ${smallestMultipleCalculator.smallestMultiple}")
 
   }
 
